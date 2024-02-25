@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сервис комментариев</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Сервис комментариев</h1>
+    <div class="comment-section">
+      <div class="comment-form">
+        <h2>Оставьте комментарий</h2>
+        <label for="name">Введите Ваше Имя:</label>
+        <input type="text" id="name" placeholder="Введите ваше имя" />
+
+        <label for="avatar">Введите ссылку на Ваш аватар:</label>
+        <input type="text" id="avatar" placeholder="Введите ссылку на аватар" />
+
+        <label for="message">Оставьте комментарий:</label>
+        <textarea
+          id="message"
+          placeholder="Введите ваш комментарий"
+          rows="4"
+          cols="50"></textarea>
+
+        <button onclick="submitComment()">Отправить</button>
+      </div>
+      <div class="comment-chat" id="commentChat">
+        <h2>Чат</h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
